@@ -6,7 +6,7 @@
 	* flask
 	* jsonify
 
-		pip install -r requirements.txt  - instala as depedências necessárias (flask e jsonify)
+		pip install -r requirements.txt  (instala as depedências necessárias (flask e jsonify))
 
 
 * Ficheiros:
