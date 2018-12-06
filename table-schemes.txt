@@ -1,0 +1,20 @@
+create table trip (
+	id INTEGER PRIMARY KEY,
+	trip_begin TEXT NOT NULL,
+	trip_end TEXT NOT NULL
+);
+
+create table highlight (
+	id INTEGER PRIMARY KEY,
+	latitude REAL NOT NULL,
+	longitude REAL NOT NULL,
+	name TEXT NOT NULL
+);
+
+create table relation (
+	id INTEGER PRIMARY KEY,
+	trip_id INTEGER,
+	highlight_id INTEGER,
+	FOREIGN KEY(highlight_id) REFERENCES highlight(id),
+	FOREIGN KEY(trip_id) REFERENCES trip(id)
+);
